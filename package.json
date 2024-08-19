@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@react-spring/three": "^9.5.2",
-    "@react-three/drei": "^9.19.5",
+    "@react-three/drei": "^9.111.1",
     "@react-three/fiber": "^8.2.2",
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.4",

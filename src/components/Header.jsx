@@ -16,7 +16,7 @@ const Header = ({ onBookmarkClick, onShoppingCardClick, onLinkClick }) => {
     useEffect(() => {
         shoppingCardRedux.length < 1 && dispatch(changeCardDot(false))
         bookmarkRedux.length < 1 && dispatch(changeSavedDot(false))
-    }, [shoppingCardRedux, bookmarkRedux])
+    }, [shoppingCardRedux, bookmarkRedux, dispatch])
 
     const bookmarkClick = () => {
         onBookmarkClick()
@@ -31,10 +31,10 @@ const Header = ({ onBookmarkClick, onShoppingCardClick, onLinkClick }) => {
         <header>
             <div className="logo">Apple's Macbooks</div>
             <nav>
-                <a onClick={() => onLinkClick(0)}>Macbook Air m1</a>
-                <a onClick={() => onLinkClick(1)}>Macbook Air m2</a>
-                <a onClick={() => onLinkClick(2)}>Macbook Pro m1</a>
-                <a onClick={() => onLinkClick(3)}>Macbook Pro m2</a>
+                <a href="#" onClick={() => onLinkClick(0)}>Macbook Air m1</a>
+                <a href="#" onClick={() => onLinkClick(1)}>Macbook Air m2</a>
+                <a href="#" onClick={() => onLinkClick(2)}>Macbook Pro m1</a>
+                <a href="#" onClick={() => onLinkClick(3)}>Macbook Pro m2</a>
             </nav>
             <div className="icons">
                 <div className="icon" onClick={bookmarkClick}>

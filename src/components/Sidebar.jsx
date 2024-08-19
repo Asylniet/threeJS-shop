@@ -50,7 +50,7 @@ const Sidebar = ({ onButtonClick, model }) => {
         } else {
             setCardChecked(false)
         }
-    }, [bookmark, shoppingCard, chosenColor, index])
+    }, [bookmark, shoppingCard, chosenColor, index, model.model, model.prices])
 
     const [bookmarkChecked, setBookmarkChecked] = useState(false)
     const [cardChecked, setCardChecked] = useState(false)
